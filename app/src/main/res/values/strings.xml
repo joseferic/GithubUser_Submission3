@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Github Users</string>
+    <string name="nama">Nama</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tab_text_1">Follower</string>
+    <string name="tab_text_2">Following</string>
+</resources>
