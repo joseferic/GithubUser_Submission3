@@ -13,6 +13,7 @@ class Setting : AppCompatActivity() {
         supportActionBar?.title = "Setting"
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
     }
 
     override fun onSupportNavigateUp(): Boolean {

@@ -52,6 +52,7 @@ class FavoriteList : AppCompatActivity() {
         }
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
 
     }
 
