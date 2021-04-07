@@ -41,8 +41,7 @@ class FavoriteList : AppCompatActivity() {
         adapter = FavoriteAdapter(this)
         binding.lvList.adapter = adapter
 
-/*        val intent = Intent(this@FavoriteList, Detail::class.java)
-        startActivityForResult(intent, Detail.REQUEST_ADD)*/
+
         if (savedInstanceState == null){
             loadFavoriteAsync()
         } else {
@@ -52,7 +51,15 @@ class FavoriteList : AppCompatActivity() {
             }
         }
 
+
+
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
+    }
+
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
@@ -130,5 +137,6 @@ class FavoriteList : AppCompatActivity() {
         }
 
     }
+
 
 }
