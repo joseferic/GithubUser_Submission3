@@ -7,6 +7,12 @@ class Setting : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_setting)
+
+        // Menghilangkan bayangan dibawah Action Bar Tab
+        supportActionBar?.elevation = 0F
+        supportActionBar?.title = "Setting"
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     override fun onSupportNavigateUp(): Boolean {
