@@ -161,7 +161,7 @@ class Detail : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         if (v.id == R.id.fab_addFavorite){
-            stateUserFavorite =  !stateUserFavorite!!
+            stateUserFavorite =  !isFavorite
             if (stateUserFavorite== true){
                 Glide.with(this@Detail).load(R.drawable.ic_baseline_favorite_24)
                         .apply(RequestOptions())
