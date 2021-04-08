@@ -178,6 +178,9 @@
         app:layout_constraintTop_toTopOf="@+id/viewPager"
         app:layout_constraintVertical_bias="1.0"
         android:src="@drawable/ic_baseline_favorite_border_24"
+        android:tint="#EB546A"
+        app:tint="#EB546A"
+        android:backgroundTint="@color/black"
         />
 
 
