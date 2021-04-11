@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
         val searchbar = findViewById<SearchView>(R.id.search_bar)
         searchbar.setSearchableInfo(searchManager.getSearchableInfo(componentName))
-        searchbar.queryHint = "Search username"
+        searchbar.queryHint = "Type here to search user"
         searchbar.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
                 query?.let { getListUser(it) }
